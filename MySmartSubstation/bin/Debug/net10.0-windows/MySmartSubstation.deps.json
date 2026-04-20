@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "MySmartSubstation/1.0.0": {
+        "dependencies": {
+          "MyLogicLibrary": "1.0.0"
+        },
+        "runtime": {
+          "MySmartSubstation.dll": {}
+        }
+      },
+      "MyLogicLibrary/1.0.0": {
+        "runtime": {
+          "MyLogicLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MySmartSubstation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyLogicLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

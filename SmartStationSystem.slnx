@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MyLogicLibrary/MyLogicLibrary.csproj" />
+  <Project Path="MySmartSubstation/MySmartSubstation.csproj" />
+</Solution>
