@@ -9,6 +9,18 @@ namespace MySmartSubstation
     public class MainViewModel : INotifyPropertyChanged
 
     {
+        // Biến lưu vị trí hiện tại (Bắt đầu từ 0 là Trạm chính)
+private int _currentIndex = 0;
+
+// Danh sách các trạm cố định
+private string[] _stationList = { 
+    "Trạm chính", 
+    "Trạm phụ 1", 
+    "Trạm phụ 2", 
+    "Trạm phụ 3", 
+    "Trạm phụ 4", 
+    "Trạm phụ 5" 
+};
         public ObservableCollection<string> StatusHistory { get; set; } = new ObservableCollection<string>();
         public ObservableCollection<DistributionStation> Stations { get; set; }
         // Khởi tạo đối tượng từ Library
@@ -61,12 +73,30 @@ namespace MySmartSubstation
 
         // Khai báo ICommand 
         public ICommand LogStatusCommand { get; }
-        public ICommand AddStationCommand {get;}
         public ICommand IncreaseCommand { get; }
         public ICommand DecreaseCommand { get; }
+        public ICommand ChangeStationCommand { get; }
 
     public MainViewModel()
     {
+        ChangeStationCommand = new RelayCommand(obj => 
+    {
+        // 1. Tăng vị trí lên 1 để sang trạm tiếp theo
+        _currentIndex++;
+
+        // 2. Logic If-Else quay đầu
+        if (_currentIndex >= _stationList.Length) 
+        {
+            // Nếu vượt quá chiều dài danh sách (hết Trạm 5)
+            // thì quay ngược về vị trí số 0 (Trạm chính)
+            _currentIndex = 0; 
+        }
+        // 3. Cập nhật CurrentStation dựa trên vị trí mới
+        string stationName = _stationList[_currentIndex];
+        CurrentStation = new DistributionStation(stationName, 1500.0 + _currentIndex * 500); 
+
+    });
+        
         LogStatusCommand = new RelayCommand(obj =>
         {
             string logEntry = $"{DateTime.Now}: {StationName} - Dòng: {Current:F1} A, Công suất: {Power:F1} W, Trạng thái: {StatusMessage}";
@@ -74,21 +104,10 @@ namespace MySmartSubstation
         });
         Stations = new ObservableCollection<DistributionStation>();
         CurrentStation = _station;
-        AddStationCommand = new RelayCommand( 
-        execute: obj=>
-        {
-           if (Stations.Count < 5)
-            {
-            var newStation = new DistributionStation($"Trạm phụ {Stations.Count + 1}", 1500.0 + Stations.Count * 500);
-            Stations.Add(newStation);
-            CurrentStation = newStation;
-            }
-        },   
-        canExecute: obj => Stations.Count < 5
-        );
+       
         IncreaseCommand = new RelayCommand(
-            execute: (p) => { Current += 0.5; },
-            canExecute: (p) => Current < 10.0 
+            execute: (p) => { Current += 0.5; }
+           
         );
         DecreaseCommand = new RelayCommand(
             execute: (p) => { Current -= 0.5; },

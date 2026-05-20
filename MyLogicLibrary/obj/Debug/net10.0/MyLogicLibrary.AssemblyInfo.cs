@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyLogicLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b4c8adb7e3afb78d9be173d025a15e804690669")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a9c6139632d0481c09a60e5aac10bc2ac7269e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyLogicLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyLogicLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
