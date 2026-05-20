@@ -1,14 +1,12 @@
-E:\MyFirstProject\MyLogicLibrary\bin\Debug\net10.0\MyLogicLibrary.exe
 E:\MyFirstProject\MyLogicLibrary\bin\Debug\net10.0\MyLogicLibrary.deps.json
-E:\MyFirstProject\MyLogicLibrary\bin\Debug\net10.0\MyLogicLibrary.runtimeconfig.json
 E:\MyFirstProject\MyLogicLibrary\bin\Debug\net10.0\MyLogicLibrary.dll
 E:\MyFirstProject\MyLogicLibrary\bin\Debug\net10.0\MyLogicLibrary.pdb
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.GeneratedMSBuildEditorConfig.editorconfig
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.AssemblyInfoInputs.cache
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.AssemblyInfo.cs
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.csproj.CoreCompileInputs.cache
+E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.sourcelink.json
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.dll
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\refint\MyLogicLibrary.dll
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.pdb
-E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\MyLogicLibrary.genruntimeconfig.cache
 E:\MyFirstProject\MyLogicLibrary\obj\Debug\net10.0\ref\MyLogicLibrary.dll

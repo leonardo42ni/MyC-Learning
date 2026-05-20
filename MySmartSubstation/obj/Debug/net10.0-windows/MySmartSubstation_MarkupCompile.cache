@@ -1,5 +1,5 @@
 ﻿MySmartSubstation
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_O
 E:\MyFirstProject\MySmartSubstation\App.xaml
 11407045341
 
-71084033468
+6-1581729284
 2072023393156
 MainWindow.xaml;
 
-True
+False
 
